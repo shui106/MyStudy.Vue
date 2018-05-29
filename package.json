@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "iview": "^2.14.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
     "vue": "^2.5.16",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^6.0.0"
