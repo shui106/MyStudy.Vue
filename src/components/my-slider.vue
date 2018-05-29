@@ -6,7 +6,7 @@
 import { Component, Prop, Provide, Vue } from "vue-property-decorator";
 
 @Component
-export default class Login extends Vue {
+export default class MySlider extends Vue {
       value = [20, 30];
 }
 </script>
