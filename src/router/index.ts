@@ -1,25 +1,18 @@
 import Vue from "vue";
-import VueRouter from "vue-router";
+import VueRouter, { RouterOptions } from "vue-router";
 import iView from "iview";
 import { routes } from "./routers";
 
-const RouterConfig = {
+const RouterConfig: RouterOptions = {
     mode: "history",
-    routes: { routes }
+    routes: routes
 };
 
 export const router = new VueRouter(RouterConfig);
 
 router.beforeEach((to, from, next) => {
     iView.LoadingBar.start();
-    /*if (to.name === 'login')
-    {
-        next(false);
-    } 
-    else    
-    {
-        next(false);
-    }*/
+    next();
 });
 router.afterEach(to => {
     iView.LoadingBar.finish();

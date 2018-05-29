@@ -11,7 +11,7 @@ export const loginRoute = {
 };
 
 export const otherRoutes = {
-    path: "/",
+    path: "/main",
     name: "main",
     permission: "",
     meta: { title: "Main" },
