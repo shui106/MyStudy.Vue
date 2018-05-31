@@ -1,5 +1,6 @@
-class UserModule {
-    namespaced = true;
+import baseModule from "./base";
+
+class UserModule extends baseModule {
     state = {
         Name: "Name"
     };
@@ -9,6 +10,6 @@ class UserModule {
             state.Name += "+Test";
         }
     };
-}
+}       
 const userModule = new UserModule();
 export default userModule;
