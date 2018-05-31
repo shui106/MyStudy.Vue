@@ -3,6 +3,8 @@ import VueRouter, { RouterOptions } from "vue-router";
 import iView from "iview";
 import { routes } from "./routers";
 
+Vue.use(VueRouter);
+
 const RouterConfig: RouterOptions = {
     mode: "history",
     routes: routes

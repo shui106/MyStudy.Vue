@@ -1,15 +1,17 @@
+import Vuex from 'vuex';
 import Vue from "vue";
 import App from "./App.vue";
 import "./theme.less";
 import iView from "iview";
 import { router } from "./router/index";
-import VueRouter from "vue-router";
+import store from "./store/index";
 
-Vue.use(VueRouter);
+Vue.use(Vuex);
 Vue.use(iView);
 Vue.config.productionTip = false;
 
 new Vue({
     render: h => h(App),
-    router: router
+    router: router,
+    store: store
 }).$mount("#app");
