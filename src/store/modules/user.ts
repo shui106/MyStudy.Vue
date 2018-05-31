@@ -1,4 +1,5 @@
 class UserModule {
+    namespaced = true;
     state = {
         Name: "Name"
     };

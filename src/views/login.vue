@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Inject, Prop, Watch } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
 import MySlider from "@/components/my-slider.vue";
 
 @Component({
